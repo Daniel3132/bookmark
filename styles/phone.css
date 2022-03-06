@@ -1,0 +1,78 @@
+@media (max-width: 391px) {
+    .luHeader{
+        display: none;
+    }
+    lu,.simpleBook,.features,.formCont,.browserCont,footer,.p1Foot,.tabTitle,.tab,.tabTextCont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .browserCont{
+        margin:10%
+    }
+    .simpleBook{
+        margin: 10% 0;
+        flex-direction: column-reverse;
+    }
+    .btnTab{
+        width: 70vw;
+    }
+    .p1Foot,lu{
+        gap: 30px;
+    }   
+    footer{
+        gap:35px;
+    }
+    .accordion{
+        width: 80vw;
+    }
+    .tab{
+        margin: 0;
+    }
+    .tabImgCont{
+        justify-self: center;
+        width: 80vw;
+        margin: 20%;
+    }
+    .tabImg{
+        margin: 0;
+    }
+    .tabTextCont{
+        text-align:center;
+        display: flex;
+        margin: 0 10%;
+        
+    }
+    .browserCont{
+        width: fit-content;
+        height: fit-content;
+        margin: 15vw 12% ;
+    }
+    .browser{
+        justify-content: center;
+        max-width: min-content;
+        margin: 0;
+        padding: 20% 0;
+    }
+    .contactCont{
+        width: max-content;
+    }
+    .email, .down{
+        width: 70vw;
+    }
+    .features{
+        display: flex;
+        width: 80vw;
+        justify-self: center;
+        margin: 25% 10%;
+    }
+    .simpleBook{
+        width: 100%;
+        margin: 0;
+    }
+    .simpleCont{
+        width: 89%;
+    }
+}

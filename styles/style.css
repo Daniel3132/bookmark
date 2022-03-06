@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+.borde{
+    border: 2px solid red;
+}
+:root{
+    --rojo: hsl(0, 94%, 66%);
+    --azulclaro: hsl(231, 69%, 60%);
+    --azul: hsl(229, 31%, 21%);
+    --GrayishBlue: hsl(229, 8%, 60%); 
+}
+h1,h3,h2{
+    color: var(--azul);
+}
+p{
+    color: var(--GrayishBlue);
+    margin: 5% 0;
+}
+#header{
+    font-size: 12px;
+    margin: 5% 10% ;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+}
+    .logoB{
+        align-self: center;
+        width: 130px;
+        height: 22px;
+    }
+    lu{
+        display: flex;
+        align-items: center;
+        gap: 15%;
+        flex-direction: row;
+        list-style: none;
+        justify-self: flex-end;
+    }
+        li:hover{
+            color: var(--rojo);
+            cursor: pointer;
+        }
+    .btnLogin{
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid var(--rojo);
+    color: white;
+    align-self: center;
+    background-color: var(--rojo);
+    }
+        .btnLogin:hover{
+            cursor:pointer;
+            background-color: white;
+            color: var(--rojo);
+        }
+
+/* ///////////////////////////////SIMPLE BOOKMARK/////////////////////////////////////  */          
+.simpleBook{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 10% 0 5% 10%;
+    gap: 1%;
+}
+.simpleCont{
+    width: 60%;
+}
+    .simpleText{
+        font-size: 15px;
+        line-height: 1.1rem;  
+        width: 100%;
+    }
+    .imgCont{
+        display: flex;
+        align-items: center;
+    }
+    .imgSimple{
+        width: 100%;
+    }
+    .btnGet{
+        background-color: white;
+        margin-right: 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        padding: 10px 15px;
+        border: 2px solid grey ;
+    }
+        .btnGet:hover{
+            color: var(--azulclaro);
+            border: 2px solid var(--azulclaro) ;
+            cursor: pointer;
+        }
+/* .azul{
+    background-color: var(--azulclaro);
+    position: relative;
+    float: right;
+    width: 90%;
+    height: 50%;
+    bottom: 350px;
+    border-radius: 1000px 0px 0 1000px;
+    z-index: 5;
+} */
+.izq{
+    border-radius:0 200px 200px 0 ;
+
+}
+/* ///////////////////////////////FEATURES, FAQS & DOWNLOAD/////////////////////////////////////  */
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 30%;
+}        
+    .textFeat{
+        margin-top: 5%;
+        font-size: 15px;
+        line-height: 1.1rem;  
+    }
+/* //////////////////////////////TABS//////////////////////////////////////  */
+.tabTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .btnTab{
+        background-color: white;
+        color: var(--GrayishBlue);
+        padding: 22px;
+        align-items: center;
+        border: none;
+        border-bottom: 1px solid var(--GrayishBlue);
+        cursor: pointer;
+    }
+    .btnTab:hover{
+        color: var(--rojo);
+    }
+    .activeTab{
+        border-bottom: 4px solid var(--rojo);
+        color: black;
+    }
+.tab{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10vw;
+    margin: 0 6% ;
+    font-size: 14px;
+    line-height: 1rem;
+}
+.tabImgCont{
+   width: 150%;
+}
+.tabImg{
+    width: 100%;
+    border-radius: 3%;
+    margin: 10%;
+}
+/* //////////////////////////////BROWSERS//////////////////////////////////////  */
+.browserCont{
+    margin: 0 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height:50vw;
+}
+    .browser{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 3% 0;
+        box-shadow: 0 5px 15px 0 rgba(123, 125, 141, 0.418) ;
+        border-radius: 5%;
+
+    }
+    .chrome{
+        display: flex;
+        align-self: flex-start;
+
+    }
+    .firefox{
+        display: flex;
+        align-self: center;
+    }
+    .opera{
+        display: flex;
+        align-self: flex-end;
+    }
+/* //////////////////////////////ACORDEON//////////////////////////////////////  */ 
+/* Style the buttons that are used to open and close the accordion panel */
+.acordeon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 20%;
+ } 
+ .accordion {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none; 
+    border-bottom: 1px solid var(--GrayishBlue);
+    outline: none;
+    transition: 0.4s;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    color: var(--rojo);
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+/* flecha acordeon */
+  .accordion:after {
+  content: url('/images/icon-arrow.svg'); 
+  float: right;
+  margin-left: 5px;
+}
+
+/* modo activo cambio de propiedades */
+.active:after{
+    content: url('/images/icon-arrowRed.svg'); 
+}
+/* Button More Info*/
+.moreInfo{ 
+    display: flex;
+    justify-self: center;
+    background-color: var(--azulclaro);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    margin-top: 8%;
+    cursor: pointer;
+}
+.moreInfo:hover{
+    background-color: white;
+    color: var(--azulclaro);
+    cursor: pointer;
+    border: 2px solid var(--azulclaro);
+}
+/* //////////////////////////////CONTACT//////////////////////////////////////  */  
+.contact{
+    background-color: var(--azulclaro);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 20px 0;   
+}
+    .contactCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        gap:30px;
+    }
+    .contact h1{
+        color: white;
+        font-size: 25px;
+    }    
+    .contact p{
+        font-size:10px;
+        color: white;
+        margin-bottom: 10%;
+    }
+        .email{
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .down{
+            padding: 10px 8px;
+        }
+            .alert{
+                display: flex;
+                flex-direction: column;
+                border-radius: 5px;
+                width: min-content;
+            }
+                .alertText{
+                    margin: 0;
+                }
+                input{
+                    width: 200px;
+        
+                }
+                .formCont{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                }
+            .alert{
+                background-color: var(--rojo);
+                color: white;
+                
+            }
+            .invalido{
+                border: 2px solid var(--rojo);
+                background-image: url('/images/icon-error.svg');
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+/* ////////////////////////////////////////////////////////////////////  */   
+footer{
+    background-color: var(--azul);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}    
+    .p1Foot{
+        display: flex;
+        flex-direction: row;
+        margin: 0 10% ;
+        gap: 40px;
+    }
+    .liFoot{
+        color: white;
+        font-size: 12px;
+    }
+    .redes{
+        display: flex;
+        margin: 0 10%;
+        align-items: center;
+        gap: 4vw;
+    }    
+/*///////////////////////svg/////////////////////// */
+.bookmark{
+    fill: white;
+}
+.redsvg:hover{
+    fill: var(--rojo);
+    cursor: pointer;
+}
