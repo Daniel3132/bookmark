@@ -23,8 +23,7 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
-
-////tabs////
+////tabs///////////
 function pintarTabs(elegida){
   let img;
   let title;
@@ -80,10 +79,29 @@ function validarCorreo(correo){
   if (valido==true){
     alerta.style.display="none"
     correoHtml.classList.remove('invalido')
-    alert('valido')
+    //enviar email///
+    const $form = document.getElementById('form')
+    const $buttonMailto = document.getElementById('trucazo')
+    $form.addEventListener('submit',handleSubmit)
+    function handleSubmit(event){
+      event.preventDefault()
+
+      const form = new FormData(this)
+      console.log(form.get('email'));
+      $buttonMailto.setAttribute('href',`mailto:danielcorrea3131@gmail.com?subject=${form.get('email')}&body=Hola Buenas Noches, he revisado tu bookmark`)
+      $buttonMailto.click()
+    }
   }else{
     alerta.style.display="block"
     correoHtml.classList.add('invalido')
     /* alert('el correo no es valido') */
   }
+}
+////////menu header///////
+document.querySelector(".menu").style.display="none";
+function abrir(){
+  document.querySelector(".menu").style.display="block";
+}
+function cerrar(){
+  document.querySelector(".menu").style.display="none";
 }

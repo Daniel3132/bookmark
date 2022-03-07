@@ -1,7 +1,57 @@
-@media (max-width: 391px) {
+@media (max-width: 700px) {
     .luHeader{
         display: none;
     }
+    .burger{
+        display: block;
+        position: relative;
+        left: 50px;
+        width: 10%;
+    }
+    .menu{
+        display: block;
+        position:fixed;
+        background-color: hsla(229, 31%, 21%, 0.938);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        flex-direction: column;
+        align-items: center;
+        font-size: larger;
+        color: white;
+    }
+    .equisBook{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10%;
+    }
+    .menuText{
+        margin: 10%;
+    }
+    .luMenu li{
+        padding: 20px 10px;
+        width: 70vw;
+        border: 1px solid grey;
+    }
+    .btnMenu{
+        width: 75vw;
+        background-color: rgba(255, 255, 255, 0);
+        font-size: larger;
+        font-weight: 400;
+        padding: 10px 20px;
+        border: 2px solid white;
+    }
+    .menuRedes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+        height: 2rem;
+        margin-top: 20%;
+    }
+
     lu,.simpleBook,.features,.formCont,.browserCont,footer,.p1Foot,.tabTitle,.tab,.tabTextCont{
         display: flex;
         flex-direction: column;
@@ -53,7 +103,7 @@
     .browser{
         justify-content: center;
         max-width: min-content;
-        margin: 0;
+        margin:8% 0;
         padding: 20% 0;
     }
     .contactCont{

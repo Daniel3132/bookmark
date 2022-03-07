@@ -3,6 +3,15 @@
     font-family: 'Rubik', sans-serif;
     margin: 0;
 }
+#trucazo{
+    opacity: 0;
+}
+.menu{
+    display: none;
+}
+.burger{
+    display: none;
+}
 .borde{
     border: 2px solid red;
 }
@@ -234,7 +243,7 @@ p{
 
 /* modo activo cambio de propiedades */
 .active:after{
-    content: url('/images/icon-arrowRed.svg'); 
+    content: url('/images/flechita-arriba.svg'); 
 }
 /* Button More Info*/
 .moreInfo{ 
